@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-25dp"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="60dp"
+    android:paddingTop="60dp"
+    android:paddingRight="60dp"
+    android:paddingBottom="170dp"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/fleepavlop"
+        android:gravity="center"
+        android:text="Game Over!"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/fleepavlop_thin"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/correct_Strings_Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Correctas:"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/number_of_correct_strings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fleepavlop"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#00FF00"
+            android:textSize="40sp"
+            tools:text="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fleepavlop_thin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skipped_strings_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Incorrectas:"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/number_of_skipped_strings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fleepavlop"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_result_go_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:text="Volver a jugar" />
+</LinearLayout><!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:src="@drawable/divider"/>--><!--<ListView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/strings_list_view">--><!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:padding="5dp"--><!--android:id="@+id/string"--><!--android:textColor="#fff"/>--><!--</ListView>-->
